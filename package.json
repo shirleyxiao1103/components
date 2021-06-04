@@ -7,13 +7,14 @@
     "components"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
     "@chakra-ui/icons": "^1.0.5",
     "@chakra-ui/react": "^1.4.2",
     "@chakra-ui/theme-tools": "^1.1.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@storybook/react": "^6.2.9",
-    "babel-cli": "^6.26.0",
     "css-loader": "^5.2.6",
     "flow-bin": "^0.136.0",
     "framer-motion": "^4.1.0",
