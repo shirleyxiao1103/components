@@ -11,6 +11,8 @@ package-lock.json
 
 # production
 /build
+/storybook-static
+/components
 
 # misc
 .DS_Store
