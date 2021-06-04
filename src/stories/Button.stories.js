@@ -1,36 +1,35 @@
 import React from 'react';
 
-import { Button } from './Button';
+import { BaselaneButton }  from '../lib/index';
 
 export default {
   title: 'Example/Button',
-  component: Button,
+  component: BaselaneButton,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <BaselaneButton {...args}>Button</BaselaneButton>;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  type: 'primary',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  type: 'secondary'
 };
 
 export const Large = Template.bind({});
 Large.args = {
-  size: 'large',
-  label: 'Button',
+  type: 'primary',
+  size: 'lg',
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  size: 'small',
-  label: 'Button',
+  size: 'sm',
+  type: 'secondary'
 };

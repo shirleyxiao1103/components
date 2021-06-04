@@ -2,8 +2,8 @@
 // 1. Import the extendTheme util - it will merge with the default theme
 import { extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
-import { Button } from './components/Shared/styles/button';
-import { Drawer } from './components/Shared/styles/drawer';
+import { Button } from './button';
+import { Drawer } from './drawer';
 
 // 2. Extend the theme to include custom colors, fonts, etc.
 const colors = {

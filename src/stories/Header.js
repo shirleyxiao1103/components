@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button } from './Button';
+import { BaselaneButton } from '../lib/index';
 import './header.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
@@ -28,11 +28,11 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       </div>
       <div>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <BaselaneButton type="primary" onClick={onLogout}>Log out</BaselaneButton>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <BaselaneButton type="primary" onClick={onLogin}>Log In</BaselaneButton>
+            <BaselaneButton type="primary" onClick={onCreateAccount}>Sign Up</BaselaneButton>
           </>
         )}
       </div>
