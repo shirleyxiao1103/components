@@ -1,6 +1,6 @@
 {
   "name": "resusable-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "components/index.js",
   "module": "components/index.js",
   "files": [
