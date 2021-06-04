@@ -1,3 +1,3 @@
-import BaselaneButton from "./BaselaneButton";
+import BaselaneButton from './BaselaneButton';
 
-export { BaselaneButton};
+export { BaselaneButton };

@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react","prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".test.js"] }], // Allow JSX inside .js for tests
+    "react/jsx-props-no-spreading": 0,
+    "import/prefer-default-export": 0,
+    "no-console": "off"
+  },
+  "parser": "babel-eslint"
+}
